@@ -112,7 +112,7 @@
     if (/(used|refurb|pre.?owned|second.?hand)/.test(t))
       return "We sell certified <b>used machines</b> from all major brands (Crathco, Grindmaster, Bunn, Taylor, Faby &amp; more) — inspected, refurbished, and warrantied for big savings. Inventory changes often, so tell us what you need on the <a href='contact.html'>contact page</a> and we'll check current stock.";
     if (/(part|parts|warranty|donper|brand)/.test(t))
-      return "We sell new <b>Donper</b> machines — the largest line in the USA — with a 1-yr labor / 3-yr parts / 5-yr compressor warranty, and we stock genuine <b>parts</b> and service all major brands. See the <a href='machines.html'>machines page</a> or request service on the <a href='contact.html'>contact page</a>.";
+      return "We sell new <b>Donper</b> machines — the largest line in the USA — with a 1-yr labor / 3-yr parts / 5-yr compressor warranty, and we provide service and genuine <b>parts</b> for every machine we lease and sell. See the <a href='machines.html'>machines page</a> or request service on the <a href='contact.html'>contact page</a>.";
     if (/(machine|model|barrel|tank|single|double|triple|capacity|options|frozen)/.test(t))
       return "We carry Donper countertop, single, double, and triple-barrel commercial machines — for margaritas, daiquiris, piña coladas, and mocktails — plus certified used machines. Browse specs and lease/buy pricing on the <a href='machines.html'>machines page</a>. What's your expected volume?";
     if (/(book|reserve|rent|rental|order|availability|available|date|event)/.test(t))
