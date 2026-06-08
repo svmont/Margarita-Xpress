@@ -177,7 +177,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.12; font-weigh
 .marquee { background: var(--ink); color: rgba(255, 255, 255, .85); overflow: hidden; padding: 16px 0; }
 .marquee ul { display: flex; gap: 48px; width: max-content; animation: slide 28s linear infinite; font-family: var(--font-display); font-weight: 600; letter-spacing: .04em; }
 .marquee li { display: flex; align-items: center; gap: 48px; white-space: nowrap; }
-.marquee li::after { content: "🍹"; }
+.marquee li::after { content: ""; flex: none; width: 16px; height: 16px; background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Ccircle%20cx='12'%20cy='12'%20r='11'%20fill='%234d7c0f'/%3E%3Ccircle%20cx='12'%20cy='12'%20r='9'%20fill='%23bef264'/%3E%3Cpath%20d='M12%2012L12%203M12%2012L20%208M12%2012L20%2016M12%2012L12%2021M12%2012L4%2016M12%2012L4%208'%20stroke='%234d7c0f'%20stroke-width='1.2'/%3E%3C/svg%3E") center / contain no-repeat; }
 @keyframes slide { to { transform: translateX(-50%); } }
 
 /* ------------------------------- Cards --------------------------------- */
