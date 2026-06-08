@@ -1,7 +1,8 @@
 # Margarita Xpress
 
 Marketing website for **Margarita Xpress** — commercial frozen drink &amp; margarita
-machine **rentals, leasing, and sales** for the **greater Houston area**.
+machine **leasing and sales** (plus event rentals) for the **greater Houston area**.
+The site leads with the core business: **commercial leasing and machine sales**.
 
 This is **Phase 1: the marketing site**. It is a fast, dependency-free static
 website (plain HTML/CSS/JS, no build step) designed so the **AI chatbot** and

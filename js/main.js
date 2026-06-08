@@ -70,7 +70,7 @@
     launch.style.display = "none";
     if (!greeted) {
       greeted = true;
-      bot("Hey there! 🍹 I'm Frosty, the Margarita Xpress assistant. I can help with machine options, pricing, delivery in the Houston area, and booking. What can I get started for you?");
+      bot("Hey there! 🍹 I'm Frosty, the Margarita Xpress assistant. I can help with commercial leasing, buying a machine, pricing, and event rentals across the Houston area. What are you looking to do?");
     }
     setTimeout(function () { if (input) input.focus(); }, 250);
   }
@@ -95,16 +95,20 @@
   /* Simple keyword matcher — placeholder for a real AI backend (Phase 2). */
   function botReply(q) {
     var t = q.toLowerCase();
+    if (/(lease|leasing|long term|long-term|monthly|rent.?to.?own)/.test(t))
+      return "Leasing is our specialty. 🙌 We lease commercial frozen drink machines to bars, restaurants, hotels, and venues from about <b>$179/mo</b> — with maintenance, cleaning, and 48-hour unit swaps included. Flexible month-to-month and rent-to-own options too. See tiers on the <a href='pricing.html'>pricing page</a> or get a quote on the <a href='contact.html'>contact page</a>.";
+    if (/(buy|purchase|own|sale|sell|buying)/.test(t))
+      return "Great — we sell commercial-grade machines outright, from about <b>$2,199</b>, with delivery, setup, and staff training. Optional service plans keep them running. Browse models on the <a href='machines.html'>machines page</a> or request sale pricing on the <a href='contact.html'>contact page</a>.";
+    if (/(commercial|business|restaurant|bar|hotel|venue|franchise|club)/.test(t))
+      return "Perfect — we work with Houston restaurants, bars, hotels, venues, and franchises. Most partners <b>lease</b> (maintenance included) or <b>buy</b> with a service plan. Tell me your business type and volume, or drop your info on the <a href='contact.html'>contact page</a> for a tailored quote.";
     if (/(price|cost|rate|how much|quote|pricing)/.test(t))
-      return "Great question! Packages start around <b>$249</b> for a single-tank event rental and scale up for double/triple-tank and long-term commercial leases. Tell me your event date or business type and I'll point you to the right package — or grab a custom quote on our <a href='contact.html'>contact page</a>.";
-    if (/(deliver|setup|set up|install|pickup|pick up|area|houston|location|zip)/.test(t))
-      return "We deliver, set up, and pick up across the <b>greater Houston area</b> — including Katy, Sugar Land, The Woodlands, Pearland, Cypress, and Spring. Delivery is included on most packages within our core zones. What zip code are you in?";
-    if (/(lease|long term|long-term|commercial|business|monthly|restaurant|bar)/.test(t))
-      return "Our commercial leasing is built for bars, restaurants, venues, and franchises — flexible monthly terms, maintenance included, and swap-outs if a unit ever needs service. Want me to have our team send commercial lease details? Drop your info on the <a href='contact.html'>contact page</a>.";
+      return "Sure! Commercial <b>leases start around $179/mo</b> (maintenance included), and machines to <b>buy start around $2,199</b>. One-time event rentals start at $249. Full breakdown is on the <a href='pricing.html'>pricing page</a> — or get a custom quote on the <a href='contact.html'>contact page</a>.";
+    if (/(deliver|setup|set up|install|pickup|pick up|area|houston|location|zip|service area)/.test(t))
+      return "We deliver, install, and service across the <b>greater Houston area</b> — including Katy, Sugar Land, The Woodlands, Pearland, Cypress, and Spring. Delivery and setup are included within our core zones. What city or zip are you in?";
     if (/(machine|model|tank|single|double|triple|capacity|options|frozen)/.test(t))
-      return "We carry single, double, and triple-tank frozen drink machines — perfect for margaritas, daiquiris, piña coladas, and mocktails. Browse specs and capacity on the <a href='machines.html'>machines page</a>. How many guests are you planning for?";
-    if (/(book|reserve|rent|order|buy|purchase|availability|available|date)/.test(t))
-      return "Love it! 🎉 Online booking &amp; checkout is launching soon. For now I can reserve your date fast — share your event date and headcount on the <a href='contact.html'>contact page</a> and we'll lock it in within one business day.";
+      return "We carry countertop, single, double, and triple-tank commercial machines — for margaritas, daiquiris, piña coladas, and mocktails. Browse specs and lease/buy pricing on the <a href='machines.html'>machines page</a>. What's your expected volume?";
+    if (/(book|reserve|rent|rental|order|availability|available|date|event)/.test(t))
+      return "Happy to help with an event rental! 🎉 Online booking is coming soon — for now, share your event date and headcount on the <a href='contact.html'>contact page</a> and we'll lock it in within one business day.";
     if (/(mix|flavor|recipe|alcohol|non.?alcohol|virgin|mocktail)/.test(t))
       return "Every rental can run alcoholic or non-alcoholic (virgin) mixes — margarita, strawberry daiquiri, piña colada, and more. We can include mix packs too. Want recommendations for your headcount?";
     if (/(clean|sanitiz|maintenance|service|warranty)/.test(t))
