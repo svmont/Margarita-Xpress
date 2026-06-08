@@ -1,0 +1,2 @@
+# Tells GitHub Pages to serve files as-is (skip Jekyll processing),
+# so folders like css/, js/, and assets/ are published unchanged.
