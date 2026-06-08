@@ -100,7 +100,7 @@
     if (/(swap|guarantee|downtime|emergency|broken|repair|service)/.test(t))
       return "Our <b>48-hour swap-out guarantee</b> is the difference: if your leased machine ever needs service, we deliver a working spare within 48 hours so you never lose a pour. Commercial accounts also get emergency service. More on the <a href='commercial-leasing.html'>commercial leasing page</a>.";
     if (/(financ|payment plan|installment|afford|credit)/.test(t))
-      return "Yes! We offer quick, easy <b>financing on all new and used machines</b>, so you can spread the cost of ownership instead of paying upfront. Tell us what you're after on the <a href='contact.html'>contact page</a> and we'll send the application to get you approved fast.";
+      return "Yes! We offer quick, easy <b>financing on all new and used machines</b>. Apply in minutes through one of our partners: <a href='https://secure.financ.ing/app?qs=apply&amp;apptype=b&amp;dealercode=PV59A&amp;cid=52dc2d19-62b6-4120-ac91-b70ab33b0b6c&amp;step=1' target='_blank' rel='noopener'>quick online application</a> or <a href='https://firstvisionfinancial.com/application/' target='_blank' rel='noopener'>First Vision Financial</a>.";
     if (/(buy|purchase|own|sale|sell|buying)/.test(t))
       return "Absolutely — we sell commercial-grade machines with delivery, setup, and staff training, and we handle repairs and genuine parts too. <b>Financing is available</b> on new and used machines. Tell us your needs on the <a href='contact.html'>contact page</a> and we'll send pricing. Browse models on the <a href='machines.html'>machines page</a>.";
     if (/(commercial|business|restaurant|bar|hotel|venue|franchise|club|golf)/.test(t))
