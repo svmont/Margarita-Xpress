@@ -96,15 +96,17 @@
   function botReply(q) {
     var t = q.toLowerCase();
     if (/(lease|leasing|long term|long-term|monthly|rent.?to.?own)/.test(t))
-      return "Leasing is our specialty. 🙌 We lease commercial frozen drink machines to bars, restaurants, hotels, and venues from about <b>$179/mo</b> — with maintenance, cleaning, and 48-hour unit swaps included. Flexible month-to-month and rent-to-own options too. See tiers on the <a href='pricing.html'>pricing page</a> or get a quote on the <a href='contact.html'>contact page</a>.";
+      return "Leasing is our specialty. 🙌 We lease commercial machines to bars, restaurants, country clubs, and golf courses from <b>$325/mo</b> (single or double barrel) plus a one-time $100 placement fee — maintenance, cleaning, and our <b>48-hour swap-out guarantee</b> included. Month-to-month, no long-term contract. See <a href='commercial-leasing.html'>commercial leasing</a> or get a quote on the <a href='contact.html'>contact page</a>.";
+    if (/(swap|guarantee|downtime|emergency|broken|repair|service)/.test(t))
+      return "Our <b>48-hour swap-out guarantee</b> is the difference: if your leased machine ever needs service, we deliver a working spare within 48 hours so you never lose a pour. Commercial accounts also get emergency service. More on the <a href='commercial-leasing.html'>commercial leasing page</a>.";
     if (/(buy|purchase|own|sale|sell|buying)/.test(t))
-      return "Great — we sell commercial-grade machines outright, from about <b>$2,199</b>, with delivery, setup, and staff training. Optional service plans keep them running. Browse models on the <a href='machines.html'>machines page</a> or request sale pricing on the <a href='contact.html'>contact page</a>.";
-    if (/(commercial|business|restaurant|bar|hotel|venue|franchise|club)/.test(t))
-      return "Perfect — we work with Houston restaurants, bars, hotels, venues, and franchises. Most partners <b>lease</b> (maintenance included) or <b>buy</b> with a service plan. Tell me your business type and volume, or drop your info on the <a href='contact.html'>contact page</a> for a tailored quote.";
+      return "Absolutely — we sell commercial-grade machines with delivery, setup, and staff training, and we handle repairs and genuine parts too. Tell us your needs on the <a href='contact.html'>contact page</a> and we'll send purchase pricing. Browse models on the <a href='machines.html'>machines page</a>.";
+    if (/(commercial|business|restaurant|bar|hotel|venue|franchise|club|golf)/.test(t))
+      return "Perfect — we work with Houston and Galveston bars, restaurants, country clubs, and golf courses. Most partners <b>lease</b> at $325/mo with maintenance and the 48-hour swap-out guarantee included. Tell me your business type and volume, or drop your info on the <a href='contact.html'>contact page</a> for a tailored quote.";
     if (/(price|cost|rate|how much|quote|pricing)/.test(t))
-      return "Sure! Commercial <b>leases start around $179/mo</b> (maintenance included), and machines to <b>buy start around $2,199</b>. One-time event rentals start at $249. Full breakdown is on the <a href='pricing.html'>pricing page</a> — or get a custom quote on the <a href='contact.html'>contact page</a>.";
-    if (/(deliver|setup|set up|install|pickup|pick up|area|houston|location|zip|service area)/.test(t))
-      return "We deliver, install, and service across the <b>greater Houston area</b> — including Katy, Sugar Land, The Woodlands, Pearland, Cypress, and Spring. Delivery and setup are included within our core zones. What city or zip are you in?";
+      return "Sure! Commercial <b>leases are $325/mo</b> (single or double barrel) plus a one-time $100 placement fee — maintenance and the 48-hour swap-out guarantee included, month-to-month. Purchase and short-term rental pricing on request. Full breakdown on the <a href='pricing.html'>pricing page</a>, or a custom quote on the <a href='contact.html'>contact page</a>.";
+    if (/(deliver|setup|set up|install|pickup|pick up|area|houston|galveston|location|zip|service area)/.test(t))
+      return "We deliver, install, and service across <b>greater Houston and Galveston</b> — including Katy, Sugar Land, The Woodlands, Tomball, Cypress, Conroe, and Spring. What city or zip are you in?";
     if (/(machine|model|tank|single|double|triple|capacity|options|frozen)/.test(t))
       return "We carry countertop, single, double, and triple-tank commercial machines — for margaritas, daiquiris, piña coladas, and mocktails. Browse specs and lease/buy pricing on the <a href='machines.html'>machines page</a>. What's your expected volume?";
     if (/(book|reserve|rent|rental|order|availability|available|date|event)/.test(t))
@@ -114,9 +116,9 @@
     if (/(clean|sanitiz|maintenance|service|warranty)/.test(t))
       return "We handle cleaning and sanitizing between rentals, and all commercial leases include maintenance and service. You just pour and enjoy. 😎";
     if (/(hello|hi|hey|yo|howdy)/.test(t))
-      return "Hey! 👋 Ask me about machines, pricing, delivery, or booking — or tell me about your event or business and I'll recommend a setup.";
+      return "Hey! 👋 Ask me about commercial leasing, our 48-hour swap-out guarantee, pricing, or buying a machine — or tell me about your business and I'll point you the right way.";
     if (/(human|call|phone|talk|agent|email|contact)/.test(t))
-      return "You got it — reach our team at <a href='tel:+18325550199'>(832) 555-0199</a> or <a href='mailto:hello@margaritaxpress.com'>hello@margaritaxpress.com</a>, or send details on the <a href='contact.html'>contact page</a>.";
+      return "You got it — reach our team at <a href='tel:+17134180312'>(713) 418-0312</a> or <a href='mailto:hello@margaritaxpress.com'>hello@margaritaxpress.com</a>, or send details on the <a href='contact.html'>contact page</a>.";
     if (/(thank|thanks|awesome|great|cool)/.test(t))
       return "Anytime! 🍹 Anything else I can help you with — machines, pricing, or booking?";
     return "I can help with <b>machines</b>, <b>pricing</b>, <b>delivery in Houston</b>, and <b>booking</b>. Try one of those, or for anything specific reach us on the <a href='contact.html'>contact page</a> and a human will follow up fast.";

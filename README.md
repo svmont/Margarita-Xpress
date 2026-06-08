@@ -8,15 +8,21 @@ This is **Phase 1: the marketing site**. It is a fast, dependency-free static
 website (plain HTML/CSS/JS, no build step) designed so the **AI chatbot** and
 **online booking/purchasing** can be added cleanly in Phase 2.
 
-> Note: The content (machines, prices, phone, email, testimonials, stats) is
-> realistic **placeholder** data. Replace it with real details before launch —
-> see [Editing content](#editing-content) below.
+> Positioning and key facts reflect the acquisition marketing plans: phone
+> **(713) 418-0312**, **20+ years** (since 2005), the **48-hour swap-out
+> guarantee**, commercial leasing **from $325/mo + $100 placement fee**
+> (month-to-month), and service across **Houston & Galveston**.
+>
+> Still **placeholder** pending real assets: testimonials/customer names
+> (need written permission), machine photos, machine model names/specs, and
+> purchase/short-term-rental prices. See [Editing content](#editing-content).
 
 ## Pages
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Home — hero, services, how it works, featured machines, testimonials |
+| `index.html` | Home — hero (20+ yrs + 48-hour guarantee), services, who we serve, machines, testimonials |
+| `commercial-leasing.html` | **Primary landing page** — leasing benefits, how-it-works, $325/mo pricing, FAQ, lead form |
 | `machines.html` | Full machine catalog with specs &amp; pricing |
 | `pricing.html` | Event rental packages, commercial leasing tiers, sales, FAQ |
 | `about.html` | Story, values, service-area cities |
