@@ -109,8 +109,12 @@
       return "Sure! Commercial <b>leases are $325/mo</b> (single or double barrel) plus a one-time $100 placement fee — maintenance and the 48-hour swap-out guarantee included, month-to-month. Purchase and short-term rental pricing on request. Full breakdown on the <a href='pricing.html'>pricing page</a>, or a custom quote on the <a href='contact.html'>contact page</a>.";
     if (/(deliver|setup|set up|install|pickup|pick up|area|houston|galveston|location|zip|service area)/.test(t))
       return "We deliver, install, and service across <b>greater Houston and Galveston</b> — including Katy, Sugar Land, The Woodlands, Tomball, Cypress, Conroe, and Spring. What city or zip are you in?";
-    if (/(machine|model|tank|single|double|triple|capacity|options|frozen)/.test(t))
-      return "We carry countertop, single, double, and triple-tank commercial machines — for margaritas, daiquiris, piña coladas, and mocktails. Browse specs and lease/buy pricing on the <a href='machines.html'>machines page</a>. What's your expected volume?";
+    if (/(used|refurb|pre.?owned|second.?hand)/.test(t))
+      return "We sell certified <b>used machines</b> from all major brands (Crathco, Grindmaster, Bunn, Taylor, Faby &amp; more) — inspected, refurbished, and warrantied for big savings. Inventory changes often, so tell us what you need on the <a href='contact.html'>contact page</a> and we'll check current stock.";
+    if (/(part|parts|warranty|donper|brand)/.test(t))
+      return "We sell new <b>Donper</b> machines — the largest line in the USA — with a 1-yr labor / 3-yr parts / 5-yr compressor warranty, and we stock genuine <b>parts</b> and service all major brands. See the <a href='machines.html'>machines page</a> or request service on the <a href='contact.html'>contact page</a>.";
+    if (/(machine|model|barrel|tank|single|double|triple|capacity|options|frozen)/.test(t))
+      return "We carry Donper countertop, single, double, and triple-barrel commercial machines — for margaritas, daiquiris, piña coladas, and mocktails — plus certified used machines. Browse specs and lease/buy pricing on the <a href='machines.html'>machines page</a>. What's your expected volume?";
     if (/(book|reserve|rent|rental|order|availability|available|date|event)/.test(t))
       return "Happy to help with an event rental! 🎉 Online booking is coming soon — for now, share your event date and headcount on the <a href='contact.html'>contact page</a> and we'll lock it in within one business day.";
     if (/(mix|flavor|recipe|alcohol|non.?alcohol|virgin|mocktail)/.test(t))
