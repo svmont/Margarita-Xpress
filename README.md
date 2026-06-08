@@ -53,7 +53,7 @@ No build command is needed; the output directory is the repo root.
 
 Everything is plain HTML, so edits are straightforward:
 
-- **Phone / email** — search for `(832) 555-0199` and `hello@margaritaxpress.com` and replace everywhere.
+- **Phone / email** — search for `(832) 555-0199` and `info@margaritaexpress.com` and replace everywhere.
 - **Machines &amp; prices** — edit the `<article class="machine">` cards in `machines.html` / `index.html` and the `.plan` cards in `pricing.html`.
 - **Service-area cities** — edit the cards under "Proudly serving Greater Houston" in `about.html`.
 - **Testimonials / stats** — edit `.quote-card` and `.stat` blocks in `index.html` / `about.html`.

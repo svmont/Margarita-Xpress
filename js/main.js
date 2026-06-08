@@ -124,7 +124,7 @@
     if (/(hello|hi|hey|yo|howdy)/.test(t))
       return "Hey! 👋 Ask me about commercial leasing, our 48-hour swap-out guarantee, pricing, or buying a machine — or tell me about your business and I'll point you the right way.";
     if (/(human|call|phone|talk|agent|email|contact)/.test(t))
-      return "You got it — reach our team at <a href='tel:+17134180312'>(713) 418-0312</a> or <a href='mailto:hello@margaritaxpress.com'>hello@margaritaxpress.com</a>, or send details on the <a href='contact.html'>contact page</a>.";
+      return "You got it — reach our team at <a href='tel:+17134180312'>(713) 418-0312</a> or <a href='mailto:info@margaritaexpress.com'>info@margaritaexpress.com</a>, or send details on the <a href='contact.html'>contact page</a>.";
     if (/(thank|thanks|awesome|great|cool)/.test(t))
       return "Anytime! 🍹 Anything else I can help you with — machines, pricing, or booking?";
     return "I can help with <b>machines</b>, <b>pricing</b>, <b>delivery in Houston</b>, and <b>booking</b>. Try one of those, or for anything specific reach us on the <a href='contact.html'>contact page</a> and a human will follow up fast.";
