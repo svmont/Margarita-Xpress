@@ -167,8 +167,8 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.12; font-weigh
 }
 .float-chip small { display: block; font-weight: 500; color: var(--muted); font-size: .78rem; font-family: var(--font-body); }
 .float-chip .dot { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; color: #fff; }
-.chip-1 { top: 8%; left: -6%; }
-.chip-2 { bottom: 12%; right: -8%; }
+.chip-1 { top: -6%; left: -7%; }
+.chip-2 { bottom: -6%; right: -7%; }
 .chip-1 .dot { background: var(--grad-sun); }
 .chip-2 .dot { background: var(--grad-lime); }
 
