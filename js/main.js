@@ -96,7 +96,7 @@
   function botReply(q) {
     var t = q.toLowerCase();
     if (/(lease|leasing|long term|long-term|monthly|rent.?to.?own)/.test(t))
-      return "Leasing is our specialty. 🙌 We lease commercial machines to bars, restaurants, country clubs, and golf courses from <b>$325/mo</b> (single or double barrel) plus a one-time $100 placement fee — maintenance, cleaning, and our <b>48-hour swap-out guarantee</b> included. Month-to-month, no long-term contract. See <a href='commercial-leasing.html'>commercial leasing</a> or get a quote on the <a href='contact.html'>contact page</a>.";
+      return "Leasing is our specialty. 🙌 We lease commercial machines to bars, restaurants, country clubs, and golf courses from <b>$325/mo</b> (single or double barrel) plus a one-time $100 placement fee — maintenance, service, and our <b>48-hour swap-out guarantee</b> included. Month-to-month, no long-term contract. See <a href='commercial-leasing.html'>commercial leasing</a> or get a quote on the <a href='contact.html'>contact page</a>.";
     if (/(troubleshoot|not freez|won.?t freez|too (soft|runny|icy|hard|thick)|runny|slushy|leak|drip|noise|loud|won.?t turn on|no power|not cold|warm drink|error|flashing)/.test(t))
       return "Sorry it's giving you trouble! 🔧 Quick checks: <b>1)</b> Confirm it's on a dedicated outlet and powered on. <b>2)</b> Allow 45–60 min to freeze from room temp. <b>3)</b> Check your mix ratio — too much alcohol or sugar can keep it from freezing. <b>4)</b> Make sure the vents aren't blocked and the area isn't too hot. Still stuck? If you lease from us, call <a href='tel:+17134180312'>(713) 418-0312</a> and we'll walk you through it — or send a replacement under our 48-hour swap-out guarantee.";
     if (/(replace|replacement|swap.?out|machine (down|dead)|stopped working|not working|won.?t start|it.?s dead|need a new)/.test(t))
@@ -124,7 +124,7 @@
     if (/(mix|flavor|recipe|alcohol|non.?alcohol|virgin|mocktail)/.test(t))
       return "Every rental can run alcoholic or non-alcoholic (virgin) mixes — margarita, strawberry daiquiri, piña colada, and more. We can include mix packs too. Want recommendations for your headcount?";
     if (/(clean|sanitiz|maintenance|service|warranty)/.test(t))
-      return "We handle cleaning and sanitizing between rentals, and all commercial leases include maintenance and service. You just pour and enjoy. 😎";
+      return "For one-time <b>event rentals</b>, we handle cleaning and sanitizing. <b>Commercial leases</b> include maintenance, service, and our 48-hour swap-out — daily cleaning is quick, and we provide full instructions for your team.";
     if (/(hello|hi|hey|yo|howdy)/.test(t))
       return "Hey! 👋 Ask me about commercial leasing, our 48-hour swap-out guarantee, pricing, or buying a machine — or tell me about your business and I'll point you the right way.";
     if (/(human|call|phone|talk|agent|email|contact)/.test(t))
