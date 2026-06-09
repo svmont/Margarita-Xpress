@@ -112,7 +112,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.12; font-weigh
 .nav-bar { display: flex; align-items: center; justify-content: space-between; height: 76px; }
 .brand { display: inline-flex; align-items: center; gap: 11px; font-family: var(--font-display); font-weight: 800; font-size: 1.28rem; color: var(--ink); }
 .brand svg { width: 38px; height: 38px; }
-.brand-logo { height: 44px; width: auto; display: block; }
+.brand-logo { height: 62px; width: auto; display: block; }
 .brand-mark { height: 38px; width: auto; display: block; }
 .brand-name span { color: var(--lime-deep); }
 .nav { display: flex; align-items: center; gap: 6px; }
@@ -407,7 +407,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.12; font-weigh
   .cta-band { padding: 48px 26px; }
   .chip-1 { left: 0; }
   .chip-2 { right: 0; }
-  .brand-logo { height: 34px; }
+  .brand-logo { height: 50px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto; }
