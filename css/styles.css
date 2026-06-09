@@ -157,7 +157,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.12; font-weigh
 .hero-art { position: relative; display: grid; place-items: center; }
 .machine-card {
   position: relative; width: min(100%, 360px);
-  background: linear-gradient(180deg, #f7f7f9, #dbdee2);
+  background: linear-gradient(180deg, #eef4e0, #d4e3b0);
   border: 1px solid rgba(255, 255, 255, .35); border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg); overflow: hidden;
 }
