@@ -106,7 +106,7 @@
     if (/(financ|payment plan|installment|afford|credit)/.test(t))
       return "Yes! We offer quick, easy <b>financing on all new and used machines</b>. Apply in minutes through one of our partners: <a href='https://secure.financ.ing/app?qs=apply&amp;apptype=b&amp;dealercode=PV59A&amp;cid=52dc2d19-62b6-4120-ac91-b70ab33b0b6c&amp;step=1' target='_blank' rel='noopener'>quick online application</a> or <a href='https://firstvisionfinancial.com/application/' target='_blank' rel='noopener'>First Vision Financial</a>.";
     if (/(buy|purchase|own|sale|sell|buying)/.test(t))
-      return "Absolutely — we sell commercial-grade machines with delivery, setup, and staff training, and we handle repairs and genuine parts too. <b>Financing is available</b> on new and used machines. Tell us your needs on the <a href='contact.html'>contact page</a> and we'll send pricing. Browse models on the <a href='machines.html'>machines page</a>.";
+      return "Absolutely — we sell commercial-grade machines with delivery, setup, and staff training; new machines carry the manufacturer warranty. <b>Financing is available</b> on new and used machines. Tell us your needs on the <a href='contact.html'>contact page</a> and we'll send pricing. Browse models on the <a href='machines.html'>machines page</a>.";
     if (/(commercial|business|restaurant|bar|hotel|venue|franchise|club|golf)/.test(t))
       return "Perfect — we work with Houston and Galveston bars, restaurants, country clubs, and golf courses. Most partners <b>lease</b> at $325/mo with maintenance and the 48-hour swap-out guarantee included. Tell me your business type and volume, or drop your info on the <a href='contact.html'>contact page</a> for a tailored quote.";
     if (/(price|cost|rate|how much|quote|pricing)/.test(t))
@@ -116,7 +116,7 @@
     if (/(used|refurb|pre.?owned|second.?hand)/.test(t))
       return "We sell certified <b>used machines</b> from all major brands (Crathco, Grindmaster, Bunn, Taylor, Faby &amp; more) — inspected, refurbished, and warrantied for big savings. Inventory changes often, so tell us what you need on the <a href='contact.html'>contact page</a> and we'll check current stock.";
     if (/(part|parts|warranty|donper|brand)/.test(t))
-      return "We sell new <b>Donper</b> machines — the largest line in the USA — with a 1-yr labor / 3-yr parts / 5-yr compressor warranty, and we provide service and genuine <b>parts</b> for every machine we lease and sell. See the <a href='machines.html'>machines page</a> or request service on the <a href='contact.html'>contact page</a>.";
+      return "We sell new <b>Donper</b> machines — the largest line in the USA — with a 1-yr labor / 3-yr parts / 5-yr compressor warranty. Lease with us and service is included; purchases are covered by that warranty. See the <a href='machines.html'>machines page</a> or reach us on the <a href='contact.html'>contact page</a>.";
     if (/(machine|model|barrel|tank|single|double|triple|capacity|options|frozen)/.test(t))
       return "We carry Donper countertop, single, double, and triple-barrel commercial machines — for margaritas, daiquiris, piña coladas, and mocktails — plus certified used machines. Browse specs and lease/buy pricing on the <a href='machines.html'>machines page</a>. What's your expected volume?";
     if (/(book|reserve|rent|rental|order|availability|available|date|event)/.test(t))
