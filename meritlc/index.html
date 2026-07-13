@@ -203,10 +203,15 @@
 
   /* Values */
   .values { background:var(--bg-panel); }
-  .values .wrap { padding:clamp(40px,5vw,58px) clamp(20px,5vw,56px); }
-  .val-row { display:flex; flex-wrap:wrap; gap:14px 0; align-items:center; justify-content:center; margin-top:26px; }
-  .val-row span { font-family:var(--serif); font-size:clamp(1rem,1.9vw,1.35rem); color:var(--ink); padding:0 clamp(14px,2.4vw,26px); position:relative; }
-  .val-row span:not(:last-child)::after { content:""; position:absolute; right:-2px; top:50%; transform:translateY(-50%); width:5px; height:5px; border-radius:50%; background:var(--accent-br); }
+  .values .wrap { padding:clamp(52px,6vw,84px) clamp(20px,5vw,56px); }
+  .val-grid { margin-top:44px; display:grid; grid-template-columns:repeat(5,1fr); gap:16px; }
+  .vcard { background:var(--bg); border:1px solid var(--line); border-radius:11px; padding:24px 20px; }
+  .vcard .vn { font-family:var(--serif); font-size:1.1rem; font-weight:600; color:var(--brand); }
+  :root[data-theme="dark"] .vcard .vn { color:var(--ink); }
+  @media (prefers-color-scheme: dark){ .vcard .vn{ color:var(--ink);} }
+  .vcard p { color:var(--ink-soft); font-size:.89rem; margin-top:10px; }
+  @media (max-width:960px){ .val-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:560px){ .val-grid{ grid-template-columns:1fr; } }
 
   /* CTA */
   .cta-sec .wrap { }
@@ -254,6 +259,7 @@
       <a href="#whynow">Why Now</a>
       <a href="#strategy">Strategy</a>
       <a href="#track">Track Record</a>
+      <a href="#story">Our Story</a>
       <a href="#leadership">Leadership</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -305,7 +311,7 @@
       <div class="track-hero">
         <div class="big">$9B+</div>
         <div class="lbl">Combined transaction experience</div>
-        <p>Executed across the full multifamily lifecycle at Camden Property Trust, PNC Bank, Wells Fargo &amp; J.P. Morgan — underwriting depth and operator relationships across Merit's target footprint.</p>
+        <p>A combined investment track record spanning nearly 30 years — executed across the full multifamily lifecycle at Camden Property Trust, PNC Bank, Wells Fargo &amp; J.P. Morgan, with underwriting depth and operator relationships across Merit's target footprint.</p>
       </div>
       <div class="track-grid">
         <div class="c"><div class="n">$3B+</div><div class="t">Multifamily acquisitions</div></div>
@@ -374,7 +380,7 @@
       <span class="eyebrow">Why the Sunbelt</span>
       <h2>Where the growth is.</h2>
       <p class="stat-lead"><b>~50%</b> of the U.S. population (~335M) — leading the 50 largest MSAs across every key demographic metric.</p>
-      <p class="lede">Merit uses a proprietary model weighting MSA, submarket &amp; ZIP-level opportunity to target the strongest risk-adjusted basis.</p>
+      <p class="lede">Spanning 18 states across the Southeast and Southwest, the Sunbelt is home to seven of the nation's ten largest cities and countless thriving mid-sized metros. Merit prioritizes markets with a proprietary data analytics model that evaluates demographic trends at the MSA, submarket, and ZIP-code level.</p>
     </div>
     <div class="grid4 tight">
       <div class="sb reveal"><h3>Business Environment</h3><p>Job, GDP &amp; wage growth outpacing U.S. and non-Sunbelt averages.</p></div>
@@ -397,6 +403,17 @@
       <div class="w reveal"><span class="num">02</span><div><h3>Dual-Bucket Flexibility</h3><p>Execute institutional core and value-add from a single platform — rare for a firm this size.</p></div></div>
       <div class="w reveal"><span class="num">03</span><div><h3>Texas-Rooted Sourcing</h3><p>A local origination network built over 20+ years — grew PNC's Texas CRE book 567%.</p></div></div>
       <div class="w reveal"><span class="num">04</span><div><h3>Principal-Led Underwriting</h3><p>Co-founders personally review every deal — no delegated risk decisions.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="sunbelt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Our Story</span>
+      <h2>Founded where resilience meets opportunity.</h2>
+      <p class="lede">Merit Living was founded in the heart of the Lone Star State — where resilience meets opportunity — on the belief that lasting success is built on collaboration, strong relationships, and a family-oriented culture. We are a forward-thinking firm specializing in the acquisition, management, and optimization of multifamily communities, dedicated to creating lasting value for investors while elevating the living experiences of the residents we serve.</p>
+      <p class="lede">While real estate is our business, our true purpose is fostering an environment where our team thrives and grows. Our foundation is built on trust, transparency, and open communication — a culture that values people as much as performance.</p>
     </div>
   </div>
 </section>
@@ -435,13 +452,14 @@
   <div class="wrap">
     <div class="sec-head reveal" style="text-align:center; max-width:none;">
       <span class="eyebrow" style="justify-content:center;">Core Values</span>
+      <h2 style="margin-top:14px;">What we stand for.</h2>
     </div>
-    <div class="val-row reveal">
-      <span>Make it Fun</span>
-      <span>Trust is Everything</span>
-      <span>Accountability for Results</span>
-      <span>Integrity Builds Relationships</span>
-      <span>Investments with Transparency</span>
+    <div class="val-grid reveal">
+      <div class="vcard"><div class="vn">Make it Fun</div><p>A positive, enjoyable environment fuels creativity, collaboration, and success.</p></div>
+      <div class="vcard"><div class="vn">Trust is Everything</div><p>Trust is the foundation of our relationships — earned through honesty, consistency, and reliability.</p></div>
+      <div class="vcard"><div class="vn">Accountability for Results</div><p>We take ownership of our commitments and deliver measurable outcomes that drive success.</p></div>
+      <div class="vcard"><div class="vn">Integrity Builds Relationships</div><p>We do what's right, guided by a shared vision of excellence, integrity, and sustainable growth.</p></div>
+      <div class="vcard"><div class="vn">Investments with Transparency</div><p>We invest with transparency and open communication, creating long-term value with every investment.</p></div>
     </div>
   </div>
 </section>
@@ -451,7 +469,7 @@
     <div class="cta reveal">
       <span class="eyebrow">Investor Relations</span>
       <h2>Partner with Merit.</h2>
-      <p>We work with a select group of investors who share our long-term, disciplined approach. Request the company overview or start a conversation about current and upcoming opportunities.</p>
+      <p>We welcome connections from prospective partners, investors, residents, and anyone curious about Merit. Request the company overview or start a conversation about current and upcoming opportunities.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="mailto:investorrelations@meritlc.com">Contact investor relations <span class="arw">&rarr;</span></a>
         <a class="btn btn-ghost" href="mailto:investorrelations@meritlc.com?subject=Request%20the%20Merit%20company%20overview">Request the overview</a>
