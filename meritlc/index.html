@@ -187,14 +187,14 @@
   @media (max-width:720px){ .why-grid{ grid-template-columns:1fr; } }
 
   /* Leadership */
-  .leaders { margin-top:50px; display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .leaders { margin-top:50px; display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
   .leader { border:1px solid var(--line); border-radius:14px; padding:30px 30px 32px; background:var(--bg); }
   .leader .nm { font-family:var(--serif); font-size:1.5rem; font-weight:600; color:var(--brand); }
   :root[data-theme="dark"] .leader .nm, @media (prefers-color-scheme: dark){ .leader .nm{ color:var(--ink);} }
   .leader .role { color:var(--accent); font-weight:600; font-size:.92rem; margin-top:3px; }
   .leader .prior { color:var(--ink-mute); font-size:.72rem; letter-spacing:.13em; text-transform:uppercase; font-weight:700; margin-top:14px; }
   .leader .bio { color:var(--ink-soft); font-size:.95rem; margin-top:12px; }
-  @media (max-width:760px){ .leaders{ grid-template-columns:1fr; } }
+  @media (max-width:980px){ .leaders{ grid-template-columns:1fr; max-width:640px; } }
   .advisory { margin-top:36px; border-top:1px solid var(--line); padding-top:28px; }
   .advisory .h { font-size:.76rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-mute); font-weight:700; }
   .adv-grid { margin-top:16px; display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
@@ -533,6 +533,12 @@
         <div class="role">Co-Founder &amp; Managing Partner</div>
         <div class="prior">Prior: Camden Property Trust &middot; J.P. Morgan</div>
         <p class="bio">Former Manager of Real Estate Investments at Camden Property Trust (NYSE: CPT) — leading market analytics and executing $3B in acquisitions, $1B in developments, and $1B in dispositions across the central and western U.S. Previously with US Capital Advisors and J.P. Morgan's Real Estate Capital Markets Group. BS Finance, Oregon State; MBA, University of Houston.</p>
+      </div>
+      <div class="leader reveal">
+        <div class="nm">Maggie Michener</div>
+        <div class="role">Vice President of Investments</div>
+        <div class="prior">Prior: Camden Property Trust &middot; Greystar</div>
+        <p class="bio">Sources, underwrites, and executes investment opportunities aligned with Merit's disciplined strategy. Previously spent four years on the Real Estate Investments team at Camden Property Trust (NYSE: CPT), contributing to $2B+ in multifamily acquisitions, dispositions, and development across major Sunbelt markets — leading financial underwriting, due diligence, and deal execution. Began her career at Greystar in multifamily operations. BBA in Finance and a Certificate in Commercial Real Estate from the University of Houston; active in CREW Houston and on the board of UH's Undergraduate Real Estate Scholars program.</p>
       </div>
     </div>
     <div class="advisory reveal">
