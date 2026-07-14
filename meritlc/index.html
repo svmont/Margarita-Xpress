@@ -307,6 +307,32 @@
   .namemeaning b { color:var(--ink); font-weight:600; }
   .leader .avatar { width:66px; height:66px; border-radius:50%; display:grid; place-items:center; font-family:var(--serif); font-size:1.34rem; font-weight:600; letter-spacing:.02em; color:var(--accent-br); background:var(--bg-deep); border:1px solid color-mix(in srgb, var(--accent-br) 35%, transparent); margin-bottom:16px; overflow:hidden; }
   .leader .avatar img { width:100%; height:100%; object-fit:cover; }
+  /* Sunbelt map */
+  .sbmap-wrap { margin-top:44px; background:var(--bg-deep); border-radius:16px; padding:clamp(26px,4vw,38px); }
+  .sbmap-wrap .cap { text-align:center; }
+  .sbmap-wrap .cap .e { font-size:.72rem; letter-spacing:.19em; text-transform:uppercase; color:var(--accent-br); font-weight:700; }
+  .sbmap-wrap .cap .s { color:var(--on-brand); font-family:var(--serif); font-size:1.15rem; margin-top:8px; }
+  .sbmap { display:block; width:100%; max-width:420px; height:auto; margin:22px auto 0; }
+  .sbmap .st-home { fill:var(--accent-br); }
+  .sbmap .st-sun { fill:color-mix(in srgb, #ffffff 9%, transparent); stroke:color-mix(in srgb, var(--accent-br) 26%, transparent); stroke-width:1; }
+  .sbmap .abbr { fill:var(--on-deep-mute); font:700 12px var(--sans); }
+  .sbmap .abbr-home { fill:#122040; font:700 13px var(--sans); }
+  .sbmap-legend { display:flex; gap:22px; justify-content:center; margin-top:20px; color:var(--on-deep-mute); font-size:.76rem; font-weight:600; letter-spacing:.03em; }
+  .sbmap-legend .k { display:inline-flex; align-items:center; gap:8px; }
+  .sbmap-legend .sw { width:13px; height:13px; border-radius:3px; }
+  .metros { margin-top:22px; display:flex; gap:9px; flex-wrap:wrap; justify-content:center; }
+  .metros span { color:var(--on-brand); border:1px solid color-mix(in srgb, var(--accent-br) 32%, transparent); border-radius:999px; padding:.44em 1em; font-size:.8rem; font-weight:600; }
+  /* Scatter viz */
+  .viz { margin-top:44px; }
+  .scatter { display:block; width:100%; max-width:680px; height:auto; margin:0 auto; }
+  .sc-grid { stroke:var(--line); stroke-width:1; }
+  .sc-axis { stroke:var(--ink-mute); stroke-width:1.5; }
+  .sc-axf { fill:var(--ink-mute); }
+  .sc-lab { fill:var(--ink-mute); font:700 11px var(--sans); letter-spacing:.12em; text-transform:uppercase; }
+  .sc-zlab { fill:var(--accent); font:700 10px var(--sans); letter-spacing:.14em; text-transform:uppercase; }
+  .sc-field { fill:color-mix(in srgb, var(--brand-2) 60%, transparent); }
+  .sc-target { fill:var(--accent-br); }
+  .sc-zone { fill:color-mix(in srgb, var(--accent-br) 12%, transparent); stroke:var(--accent-br); stroke-width:1.2; stroke-dasharray:5 4; }
   .logo-img { height:32px; width:auto; display:block; }
   footer.site .logo-img { height:27px; }
   .range .brandmark { width:66%; height:auto; filter:drop-shadow(0 8px 26px rgba(0,0,0,.4)); }
@@ -456,6 +482,12 @@
       <p class="stat-lead"><b>~50%</b> of the U.S. population (~335M) — leading the 50 largest MSAs across every key demographic metric.</p>
       <p class="lede">Spanning 18 states across the Southeast and Southwest, the Sunbelt is home to seven of the nation's ten largest cities and countless thriving mid-sized metros.</p>
     </div>
+<div class="sbmap-wrap reveal">
+      <div class="cap"><div class="e">The Sunbelt Footprint</div><div class="s">~335M people &middot; ~50% of the U.S. &middot; 7 of the 10 largest U.S. cities</div></div>
+      <svg class="sbmap" viewBox="0 0 424 154" role="img" aria-label="Schematic map of Merit's Sunbelt footprint with Texas as the primary market"><rect class="st-sun" x="0" y="0" width="46" height="46" rx="6"/><text class="abbr" x="23" y="27" text-anchor="middle">NV</text><rect class="st-sun" x="0" y="54" width="46" height="46" rx="6"/><text class="abbr" x="23" y="81" text-anchor="middle">CA</text><rect class="st-sun" x="54" y="54" width="46" height="46" rx="6"/><text class="abbr" x="77" y="81" text-anchor="middle">AZ</text><rect class="st-sun" x="108" y="54" width="46" height="46" rx="6"/><text class="abbr" x="131" y="81" text-anchor="middle">NM</text><rect class="st-sun" x="162" y="0" width="46" height="46" rx="6"/><text class="abbr" x="185" y="27" text-anchor="middle">OK</text><rect class="st-home" x="108" y="108" width="46" height="46" rx="6"/><text class="abbr-home" x="131" y="135" text-anchor="middle">TX</text><rect class="st-sun" x="216" y="0" width="46" height="46" rx="6"/><text class="abbr" x="239" y="27" text-anchor="middle">AR</text><rect class="st-sun" x="162" y="108" width="46" height="46" rx="6"/><text class="abbr" x="185" y="135" text-anchor="middle">LA</text><rect class="st-sun" x="216" y="54" width="46" height="46" rx="6"/><text class="abbr" x="239" y="81" text-anchor="middle">MS</text><rect class="st-sun" x="270" y="54" width="46" height="46" rx="6"/><text class="abbr" x="293" y="81" text-anchor="middle">AL</text><rect class="st-sun" x="270" y="0" width="46" height="46" rx="6"/><text class="abbr" x="293" y="27" text-anchor="middle">TN</text><rect class="st-sun" x="324" y="54" width="46" height="46" rx="6"/><text class="abbr" x="347" y="81" text-anchor="middle">GA</text><rect class="st-sun" x="324" y="108" width="46" height="46" rx="6"/><text class="abbr" x="347" y="135" text-anchor="middle">FL</text><rect class="st-sun" x="324" y="0" width="46" height="46" rx="6"/><text class="abbr" x="347" y="27" text-anchor="middle">SC</text><rect class="st-sun" x="378" y="0" width="46" height="46" rx="6"/><text class="abbr" x="401" y="27" text-anchor="middle">NC</text></svg>
+      <div class="sbmap-legend"><span class="k"><span class="sw" style="background:var(--accent-br)"></span>Texas — HQ &amp; primary market</span><span class="k"><span class="sw" style="background:rgba(255,255,255,.14); border:1px solid rgba(199,162,74,.4)"></span>Sunbelt footprint</span></div>
+      <div class="metros"><span>Houston</span><span>San Antonio</span><span>Austin</span><span>Dallas–Fort Worth</span><span>+ select Sunbelt MSAs</span></div>
+    </div>
     <div class="grid4 tight">
       <div class="sb reveal"><h3>Business Environment</h3><p>Job, GDP &amp; wage growth outpacing U.S. and non-Sunbelt averages.</p></div>
       <div class="sb reveal"><h3>Lower Taxes</h3><p>A pro-business tax &amp; regulatory climate driving sustained corporate relocations.</p></div>
@@ -472,6 +504,7 @@
       <h2>Markets chosen by data — down to the ZIP code.</h2>
       <p class="lede">Every opportunity runs through a proprietary analytics model that narrows from metro to micro-location — the discipline behind where we invest and the basis we pay.</p>
     </div>
+<div class="viz reveal"><svg class="scatter" viewBox="0 0 700 372" role="img" aria-label="Scatter plot of candidate markets by demand and growth, with Merit's target zone highlighted in the top right"><line class="sc-grid" x1="223" y1="34" x2="223" y2="308"/><line class="sc-grid" x1="366" y1="34" x2="366" y2="308"/><line class="sc-grid" x1="509" y1="34" x2="509" y2="308"/><line class="sc-grid" x1="80" y1="125" x2="652" y2="125"/><line class="sc-grid" x1="80" y1="217" x2="652" y2="217"/><rect class="sc-zone" x="470" y="34" width="182" height="116" rx="6"/><text class="sc-zlab" x="640" y="26" text-anchor="end">Merit target zone</text><circle class="sc-field" cx="299" cy="131" r="4"/><circle class="sc-field" cx="323" cy="91" r="4"/><circle class="sc-field" cx="401" cy="79" r="4"/><circle class="sc-field" cx="361" cy="97" r="4"/><circle class="sc-field" cx="154" cy="205" r="4"/><circle class="sc-field" cx="465" cy="300" r="4"/><circle class="sc-field" cx="438" cy="199" r="4"/><circle class="sc-field" cx="640" cy="85" r="4"/><circle class="sc-field" cx="279" cy="128" r="4"/><circle class="sc-field" cx="173" cy="177" r="4"/><circle class="sc-field" cx="471" cy="193" r="4"/><circle class="sc-field" cx="423" cy="94" r="4"/><circle class="sc-field" cx="132" cy="149" r="4"/><circle class="sc-field" cx="492" cy="206" r="4"/><circle class="sc-field" cx="294" cy="238" r="4"/><circle class="sc-field" cx="372" cy="175" r="4"/><circle class="sc-field" cx="550" cy="259" r="4"/><circle class="sc-field" cx="253" cy="236" r="4"/><circle class="sc-field" cx="411" cy="289" r="4"/><circle class="sc-field" cx="517" cy="172" r="4"/><circle class="sc-field" cx="116" cy="254" r="4"/><circle class="sc-field" cx="535" cy="236" r="4"/><circle class="sc-field" cx="591" cy="179" r="4"/><circle class="sc-field" cx="500" cy="240" r="4"/><circle class="sc-field" cx="440" cy="212" r="4"/><circle class="sc-field" cx="573" cy="300" r="4"/><circle class="sc-field" cx="383" cy="253" r="4"/><circle class="sc-field" cx="133" cy="259" r="4"/><circle class="sc-field" cx="475" cy="307" r="4"/><circle class="sc-field" cx="564" cy="171" r="4"/><circle class="sc-field" cx="335" cy="254" r="4"/><circle class="sc-field" cx="103" cy="213" r="4"/><circle class="sc-field" cx="206" cy="118" r="4"/><circle class="sc-field" cx="132" cy="271" r="4"/><circle class="sc-field" cx="181" cy="161" r="4"/><circle class="sc-field" cx="337" cy="288" r="4"/><circle class="sc-field" cx="147" cy="210" r="4"/><circle class="sc-field" cx="424" cy="290" r="4"/><circle class="sc-target" cx="526" cy="100" r="5.5"/><circle class="sc-target" cx="545" cy="105" r="5.5"/><circle class="sc-target" cx="584" cy="58" r="5.5"/><circle class="sc-target" cx="492" cy="126" r="5.5"/><circle class="sc-target" cx="529" cy="73" r="5.5"/><circle class="sc-target" cx="639" cy="93" r="5.5"/><line class="sc-axis" x1="80" y1="308" x2="660" y2="308"/><line class="sc-axis" x1="80" y1="308" x2="80" y2="26"/><polygon class="sc-axf" points="660,304 668,308 660,312"/><polygon class="sc-axf" points="76,26 80,18 84,26"/><text class="sc-lab" x="366" y="352" text-anchor="middle">In-migration &amp; demand</text><text class="sc-lab" x="-186" y="24" transform="rotate(-90)" text-anchor="middle">Rent &amp; income growth</text></svg></div>
     <div class="tiers reveal">
       <div class="tier"><div class="lvl">01</div><h3>MSA</h3><p>The 50 largest U.S. metros, scored on population, employment, migration, and income growth.</p></div>
       <div class="tier-arrow" aria-hidden="true">&rarr;</div>
