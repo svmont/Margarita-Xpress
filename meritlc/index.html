@@ -297,6 +297,14 @@
   .weighs .chips span { font-size:.86rem; font-weight:600; color:var(--brand); border:1px solid var(--line); border-radius:999px; padding:.5em 1em; background:var(--bg-panel); }
   :root[data-theme="dark"] .weighs .chips span { color:var(--ink); }
   @media (prefers-color-scheme: dark){ .weighs .chips span{ color:var(--ink);} }
+  /* Name-meaning aside */
+  .namemeaning { margin-top:28px; max-width:62ch; background:var(--bg); border:1px solid var(--line); border-left:4px solid var(--accent-br); border-radius:10px; padding:22px 26px; }
+  .namemeaning .nm-h { font-family:var(--serif); font-size:1.16rem; font-weight:600; color:var(--brand); }
+  :root[data-theme="dark"] .namemeaning .nm-h { color:var(--ink); }
+  @media (prefers-color-scheme: dark){ .namemeaning .nm-h{ color:var(--ink);} }
+  .namemeaning p { color:var(--ink-soft); font-size:.97rem; margin-top:10px; }
+  .namemeaning em { font-style:italic; color:var(--accent); }
+  .namemeaning b { color:var(--ink); font-weight:600; }
   .logo-img { height:32px; width:auto; display:block; }
   footer.site .logo-img { height:27px; }
   .range .brandmark { width:66%; height:auto; filter:drop-shadow(0 8px 26px rgba(0,0,0,.4)); }
@@ -499,6 +507,10 @@
       <h2>Founded where resilience meets opportunity.</h2>
       <p class="lede">Merit Living was founded in the heart of the Lone Star State — where resilience meets opportunity — on the belief that lasting success is built on collaboration, strong relationships, and a family-oriented culture. We are a forward-thinking firm specializing in the acquisition, management, and optimization of multifamily communities, dedicated to creating lasting value for investors while elevating the living experiences of the residents we serve.</p>
       <p class="lede">While real estate is our business, our true purpose is fostering an environment where our team thrives and grows. Our foundation is built on trust, transparency, and open communication — a culture that values people as much as performance.</p>
+      <div class="namemeaning reveal">
+        <div class="nm-h">The meaning behind the name</div>
+        <p>Its roots are Texan: the state's name comes from the Caddo word <em>táysha</em> — "friends" or "allies." <b>Merit</b> is achievement earned through effort, never given. <b>Living</b> is a life of growth, character, and belonging. Together, a simple conviction: when you earn it, you truly live it.</p>
+      </div>
     </div>
   </div>
 </section>
