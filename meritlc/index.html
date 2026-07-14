@@ -264,6 +264,21 @@
   .cform .note a { color:var(--brand-2); text-decoration:none; }
   @media (max-width:720px){ .contact-grid{ grid-template-columns:1fr; } .cform .row2{ grid-template-columns:1fr; } }
 
+  /* Strategy — visual */
+  .buckets { position:relative; }
+  .bucket { position:relative; }
+  .bucket::before { content:""; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg, var(--accent-br), color-mix(in srgb, var(--accent-br) 25%, transparent)); z-index:1; }
+  .bucket .top { display:flex; align-items:flex-start; gap:15px; }
+  .bucket .top .ic { flex:none; width:46px; height:46px; border-radius:10px; display:grid; place-items:center; background:color-mix(in srgb, var(--brand) 10%, transparent); color:var(--brand-2); margin-top:3px; }
+  .plat { display:flex; flex-direction:column; align-items:center; text-align:center; margin:6px 0 32px; }
+  .plat svg { width:56px; height:auto; }
+  .plat .t { font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-top:14px; }
+  .plat .s { font-family:var(--serif); font-size:1.16rem; color:var(--ink); margin-top:5px; max-width:34ch; }
+  .thesis-band { margin-top:22px; display:flex; align-items:center; gap:20px; background:var(--bg-deep); color:var(--on-brand); border-radius:12px; padding:24px 30px; }
+  .thesis-band svg { flex:none; width:42px; height:auto; }
+  .thesis-band p { font-family:var(--serif); font-size:1.16rem; line-height:1.4; }
+  .thesis-band b { color:var(--accent-br); font-weight:600; font-style:italic; }
+  @media (max-width:560px){ .thesis-band{ flex-direction:column; text-align:center; gap:14px; } }
   .logo-img { height:32px; width:auto; display:block; }
   footer.site .logo-img { height:27px; }
   .range .brandmark { width:66%; height:auto; filter:drop-shadow(0 8px 26px rgba(0,0,0,.4)); }
@@ -362,11 +377,16 @@
     <div class="sec-head reveal">
       <span class="eyebrow">Investment Thesis</span>
       <h2>A dual-bucket strategy across the multifamily opportunity set.</h2>
-      <p class="lede">Institutional-sized Class A acquisitions in strong primary-market locations, complemented by smaller Class B value-add deals in secondary and tertiary Sunbelt markets. Across both, we target 5–20 year vintages at a discount to replacement cost.</p>
+      <p class="lede">Institutional-sized Class A acquisitions in strong primary-market locations, complemented by smaller Class B value-add deals in secondary and tertiary Sunbelt markets.</p>
+    </div>
+    <div class="plat reveal">
+      <svg viewBox="0 0 100 58" fill="none" aria-hidden="true"><g stroke="#C7A24A" stroke-width="3" stroke-linejoin="miter"><path d="M2 54 L28 8 L54 54 Z"/><path d="M23 54 L50 2 L77 54 Z"/><path d="M46 54 L72 8 L98 54 Z"/></g></svg>
+      <div class="t">Two strategies · One platform</div>
+      <div class="s">We execute institutional core and value-add from a single platform — rare for a firm this size.</div>
     </div>
     <div class="buckets">
       <div class="bucket reveal">
-        <div class="top"><div class="no">Bucket 01</div><h3>Institutional Core</h3><p class="desc">Class A in strong suburban &amp; select infill locations.</p></div>
+        <div class="top"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 21V10M20 21V10M4 10l8-5 8 5M8 21v-5M12 21v-5M16 21v-5"/></svg></div><div class="hd"><div class="no">Bucket 01</div><h3>Institutional Core</h3><p class="desc">Class A in strong suburban &amp; select infill locations.</p></div></div>
         <dl>
           <div><dt>Investment</dt><dd>$30M–$75M</dd></div>
           <div><dt>Asset size</dt><dd>150–400 units</dd></div>
@@ -377,7 +397,7 @@
         <div class="foot">Institutional-quality basis at a discount to replacement cost; IRR-driven total return.</div>
       </div>
       <div class="bucket reveal">
-        <div class="top"><div class="no">Bucket 02</div><h3>Yield / Value-Add</h3><p class="desc">Class B in secondary &amp; tertiary markets.</p></div>
+        <div class="top"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></div><div class="hd"><div class="no">Bucket 02</div><h3>Yield / Value-Add</h3><p class="desc">Class B in secondary &amp; tertiary markets.</p></div></div>
         <dl>
           <div><dt>Investment</dt><dd>$5M–$30M</dd></div>
           <div><dt>Asset size</dt><dd>100–250 units</dd></div>
@@ -387,6 +407,10 @@
         </dl>
         <div class="foot">Higher yield-on-cost and cash-on-cash returns; operational lift drives NOI growth.</div>
       </div>
+    </div>
+    <div class="thesis-band reveal">
+      <svg viewBox="0 0 100 58" fill="none" aria-hidden="true"><g stroke="#C7A24A" stroke-width="3.4" stroke-linejoin="miter"><path d="M2 54 L28 8 L54 54 Z"/><path d="M23 54 L50 2 L77 54 Z"/><path d="M46 54 L72 8 L98 54 Z"/></g></svg>
+      <p>Across both strategies, we target <b>5–20 year vintages at a discount to replacement cost.</b></p>
     </div>
   </div>
 </section>
