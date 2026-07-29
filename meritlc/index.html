@@ -350,6 +350,7 @@
   .ilist-form input { flex:1; font-family:var(--sans); font-size:.98rem; color:var(--ink); background:var(--bg); border:1px solid var(--line); border-radius:7px; padding:.72em .85em; }
   .ilist-form input:focus { outline:none; border-color:var(--brand); box-shadow:0 0 0 3px color-mix(in srgb, var(--brand) 18%, transparent); }
   .ilist-form .btn { white-space:nowrap; }
+  .ilist-btn { margin-top:16px; }
   .cform-wrap .ci-h { margin-bottom:16px; }
   .logo-img { height:32px; width:auto; display:block; }
   footer.site .logo-img { height:27px; }
@@ -706,10 +707,7 @@
         <div class="ilist">
           <div class="ci-h">Join our investor list</div>
           <p class="ci-sub">Be among the first to hear about Merit and upcoming opportunities.</p>
-          <form class="ilist-form" onsubmit="return false;">
-            <input type="email" placeholder="you@company.com" aria-label="Email for the investor list">
-            <button type="submit" class="btn btn-primary">Join</button>
-          </form>
+          <a class="btn btn-primary ilist-btn" href="https://forms.monday.com/forms/REPLACE-WITH-YOUR-FORM-ID" target="_blank" rel="noopener">Join the investor list <span class="arw">&rarr;</span></a>
         </div>
         <div class="det"><div class="l">Office</div><div class="v">4601 Washington Ave, Suite 220<br>Houston, TX 77007</div></div>
         <div class="det"><div class="l">Investor Relations</div><div class="v"><a href="mailto:investorrelations@meritlc.com">investorrelations@meritlc.com</a></div></div>
