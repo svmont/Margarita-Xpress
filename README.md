@@ -30,12 +30,6 @@ website (plain HTML/CSS/JS, no build step) designed so the **AI chatbot** and
 
 Shared assets: `css/styles.css`, `js/main.js`, `assets/` (logo + favicon).
 
-## Other sites in this repo
-
-- [`creekside-haven/`](creekside-haven/) &mdash; marketing site for **Creekside Haven**, a
-  new-construction apartment community in Montgomery, TX. Separate static site with its own
-  styles and assets; see [`creekside-haven/README.md`](creekside-haven/README.md).
-
 ## Run locally
 
 It's static — just open `index.html` in a browser, or serve it:
